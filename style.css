@@ -1,0 +1,41 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background: #151515;
+}
+.loading{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+.percent{
+    color: #faf9fc;
+    font-size: 100px;
+    font-weight: 400;
+    text-align: center;
+    margin-bottom: 15px;
+}
+
+.progress{
+    width: 200px;
+    height: 25px;
+    background: #ff0202;
+    border-radius: 50px;
+}
+.text-blink{
+    animation: blink .7s ease-in-out;
+}
+@keyframes  blink {
+    0%{
+        opacity: 1;
+    }
+    50%{
+        opacity: 0.2;
+    }
+    100%{
+        opacity: 1;
+    }
+}
